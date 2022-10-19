@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <title>Desenvolvimento Web 1</title>
+</head>
+
+<body>
+    <!-- Cabeçalho e Menu de Navegação-->
+    <nav class="container-fluid" id="menu">
+        <!-- Fim do Menu Principal-->
+    </nav>
+    <!-- Fim do  Cabeçalho e Menu de Navegação-->
+    <main class="container">
+        <h1>Lista de Tarefas</h1>
+        <article id="lista-tarefas">
+            <!-- o article já é pre estilizado pelo picoss -->
+            <div class="grid">
+                <!-- Grid é padrao do piscoss -->
+                <input type="text" id="input-nova-tarefa" />
+                <!-- Esse só está sendo usado para ser identificado no queryselector -->
+                <button id="btn-adcionar">Adcionar</button>
+            </div>
+            <div>
+                <ul id="lista-tarefas">
+                    <li class="tarefa grid">
+                        <div>Estudar Javascript</div> 
+                        <a href="" role="button"></a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <!--Conteúdo aqui-->
+    </main>
+    <script type="module" src="./js/lista-tarefas.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+import './nav.js'; //Importando o NAV no JS principal
