@@ -10,30 +10,24 @@
 
 <body>
     <!-- Cabeçalho e Menu de Navegação-->
-    <nav class="container-fluid" id="menu">
-        <!-- Fim do Menu Principal-->
-    </nav>
+    <nav class="container-fluid" id="menu"></nav>
     <!-- Fim do  Cabeçalho e Menu de Navegação-->
     <main class="container">
         <h1>Lista de Tarefas</h1>
-        <article id="lista-tarefas">
-            <!-- o article já é pre estilizado pelo picoss -->
+        <article id="card-lista-tarefas">
             <div class="grid">
-                <!-- Grid é padrao do piscoss -->
                 <input type="text" id="input-nova-tarefa" />
-                <!-- Esse só está sendo usado para ser identificado no queryselector -->
-                <button id="btn-adcionar">Adcionar</button>
+                <button id="btn-adicionar">Adicionar</button>
             </div>
             <div>
                 <ul id="lista-tarefas">
-                    <li class="tarefa grid">
-                        <div>Estudar Javascript</div> 
-                        <a href="" role="button"></a>
+                    <li class="tarefa">
+                        <div>Estudar Javascript</div>
+                        <button class="btn-excluir">Excluir</button>
                     </li>
                 </ul>
             </div>
         </article>
-        <!--Conteúdo aqui-->
     </main>
     <script type="module" src="./js/lista-tarefas.js"></script>
 </body>
