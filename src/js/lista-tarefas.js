@@ -4,34 +4,33 @@ import '../css/lista-tarefas.css'
 
 //atribuindo elementos nas Variaveis
 
-const input = document.querySelector('#input-nova-tarefa')
+const inputTarefa = document.querySelector('#input-nova-tarefa')
 const button = document.querySelector('#btn-adicionar')
-const lista = document.querySelector('#lista-tarefas')
-const excluir = document.querySelector('#excluir')
+const listaTarefas = document.querySelector('#lista-tarefas')
 
 
 
 button.addEventListener('click', () => {
-  const valor = input.value
+  const descricaoTarefa = inputTarefa.value
   //criar elemento
-  const elemento = document.createElement('li')
+  const li = document.createElement('li')
   //adiciona o elemento li
-  elemento.className = 'tarefa'
+  li.className = 'tarefa'
   // adicionar um atributo ao elemento
 
-  //elemento.append(valor)
+  //li.append(valor)
   // no caso do atributo class pode-se utilizar o código:
 
-  elemento.innerHTML = `
-	<div>${valor}</div>
+  li.innerHTML = `
+	<div>${descricaoTarefa}</div>
   <button class="btn-excluir">Excluir</button>`
 
-  lista.appendChild(elemento)
+  li.addEventListener('click', function (event) {
+    if (event.target.className == 'btn-excluir') {
+      listaTarefas.removeChild(li)
+    }
+  })
+
+  listaTarefas.appendChild(li)
 
 })
-
-
-excluir.addEventListener('click', () => {
-
-})
-
